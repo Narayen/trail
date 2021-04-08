@@ -66,12 +66,12 @@ handleDisconnect();
 
 app.get('/newUser', function(req,res)
 {
-	res.render('/pages/newUser.html');
+	res.render('/pages/html/newUser.html');
 });
 
 app.get('/forgotPass', function(req,res)
 {
-	res.render('/pages/forgotPass.html');
+	res.render('/pages/html/forgotPass.html');
 });
 
 app.post('/validate_user',function(req,res)
