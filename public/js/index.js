@@ -1,8 +1,8 @@
+sessionStorage.setItem('app_url', 'https://nana-testing.herokuapp.com');
+
 $(document).ready(function(e) {
 	$("#login").on('submit',(function(e) {
         e.preventDefault();
-
-        sessionStorage.setItem('app_url', 'https://nana-testing.herokuapp.com');
 
         if($('#username').val().length>0)
         {
