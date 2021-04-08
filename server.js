@@ -64,6 +64,16 @@ handleDisconnect();
 
 // ------------------------------------------------------------------------------------------------------------------------------------------
 
+app.get('/newUser', function(req,res)
+{
+	res.render('/pages/newUser.html');
+});
+
+app.get('/forgotPass', function(req,res)
+{
+	res.render('/pages/forgotPass.html');
+});
+
 app.post('/validate_user',function(req,res)
 {
     console.log(req.body);

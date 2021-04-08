@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Home Page</title>
+        <title>New user</title>
 
         <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
         <link rel="shortcut icon" href="./images/paladins.png" type="image/x-icon">
@@ -21,37 +21,58 @@
                 <div class="card">
                     <div class="container">
                         <br>
-                        <form id="login" method="POST">
+                        <form id="newUserCredentials" method="POST">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label>First Name <span style="color: red;">*</span></label>
+                                    <input type="text" id="first_name" class="form-control" placeholder="First Name">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label>Last Name <span style="color: red;">*</span></label>
+                                    <input type="text" id="last_name" class="form-control" placeholder="Last Name">
+                                </div>
+                            </div>
+                            <br>
                             <label>User name <span style="color: red;">*</span></label>
                             <input type="text" id="username" class="form-control" placeholder="User name">
+                            <br>
+                            <label>Email <span style="color: red;">*</span></label>
+                            <input type="email" id="email" class="form-control" placeholder="Email">
                             <br>
                             <label>Password <span style="color: red;">*</span></label>
                             <input type="password" id="password" class="form-control" placeholder="Password">
                             <br>
+                            <label>Re-Enter Password <span style="color: red;">*</span></label>
+                            <input type="password" id="reenter_password" class="form-control" placeholder="Re-Enter Password">
+                            <br>
                             <div class="col-sm-12">
-                                <div class="col-sm-4"></div>
+                                <div class="col-sm-2"></div>
                                 <div class="col-sm-8">
                                     <input type="submit" id="submit" value="submit" class="btn btn-success" style="width: 40%;"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     <input type="button" id="cancel" value="cancel" class="btn btn-danger" style="width: 40%;"/>
                                 </div>
+                                <div class="col-sm-2"></div>
                             </div>
                         </form>
                         <br>
                         <br>
                         <br>
                         <center>
-                            <a style="cursor: pointer; text-decoration: none;" onclick="newUser();">New User !!! Click here...</a>
+                            <a style="cursor: pointer; text-decoration: none;" onclick="existingUser();">Existing User ! Click here...</a>
                         </center>
                         <br>
                         <center>
                             <a style="cursor: pointer; text-decoration: none;" onclick="forgotPass();">Forgot Password !!! Click here...</a>
                         </center>
+                        <br>
+                        <br>
                     </div>
                 </div>
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
         <script type="text/javascript" src="./js/index.js"></script>
         <script type="text/javascript" src="./js/functions.js"></script>
     </body>
